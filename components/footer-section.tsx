@@ -221,10 +221,18 @@ function FooterBar() {
         <div className="flex flex-col items-center gap-3 md:items-start">
           <p className="text-sm text-india-white/50">India Global Watch © 2026</p>
           <span className="inline-flex items-center gap-2 rounded-full border border-india-white/15 px-3 py-1 text-xs text-india-white/70 transition-colors hover:border-india-saffron/50">
-            <span className="flex h-3 w-4 overflow-hidden rounded-[2px]" aria-hidden="true">
-              <span className="h-full w-1/3 bg-india-saffron" />
-              <span className="h-full w-1/3 bg-india-white" />
-              <span className="h-full w-1/3 bg-india-green" />
+            <span
+              className="flex h-4 w-6 flex-col overflow-hidden rounded-[2px] border border-white/20"
+              aria-hidden="true"
+            >
+              {/* Saffron */}
+              <span className="h-1/3 w-full bg-india-saffron" />
+              {/* White with Ashoka Chakra */}
+              <span className="relative flex h-1/3 w-full items-center justify-center bg-india-white">
+                <span className="h-[5px] w-[5px] rounded-full border border-blue-900" />
+              </span>
+              {/* Green */}
+              <span className="h-1/3 w-full bg-india-green" />
             </span>
             Made in India
           </span>
