@@ -1,9 +1,14 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Manrope } from 'next/font/google'
+import { Manrope, Playfair_Display } from 'next/font/google'
 import './globals.css'
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' })
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  style: ['italic', 'normal'],
+  variable: '--font-playfair',
+})
 
 export const metadata: Metadata = {
   title: 'India in Numbers — India on the Global Stage',
@@ -40,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} bg-india-navy-deep`}>
+    <html lang="en" className={`${manrope.variable} ${playfair.variable} bg-india-navy-deep`}>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
