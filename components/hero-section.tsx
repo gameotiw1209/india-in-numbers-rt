@@ -98,7 +98,6 @@ export function HeroSection() {
         </motion.div>
       </motion.div>
 
-      {/* Scroll cue */}
       <motion.button
         type="button"
         onClick={scrollToDashboard}
