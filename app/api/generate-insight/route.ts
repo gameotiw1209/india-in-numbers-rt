@@ -20,7 +20,7 @@ Mention specific numbers where relevant. Keep the tone factual and neutral, like
 data journalism piece. Do not make up any numbers not present in the data provided.
 Even provide the source of data comparison.Add a bit about where does india leads if leading
 or lags if less in metrics with a bit of ground level data.And even add the turing point for 
-india like form which year did a drastic change occured in the process.
+india like form which year did a drastic change occured in the process.`
 
     const response = await ai.models.generateContent({
       model: "gemini-3.5-flash-lite",
